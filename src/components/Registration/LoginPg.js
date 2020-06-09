@@ -76,12 +76,14 @@ class LoginPg extends React.Component {
     const { formErrors}= this.state;
     return (
       <div>
-      <Row>
+      <Row style={{background: "#151B54"}}>
+      <Col >
+          <Image style= {{width: 500, height: 600}} src= "assets/login.png"/>        </Col>
         <Col>
-        <Card>
+        <Card style={{marginTop:150, marginRight: 100, width: 300}}>
           <Container>
+        <Form onSubmit= {this.handleSubmit} onValidate >
         <h1 style={{color: "#2F4F4F", fontWeight: "bold"}}>Sign In</h1>
-        <Form onSubmit= {this.handleSubmit} onValidate>
         <div className= "Email">
             <input
               type= "email"
@@ -106,7 +108,7 @@ class LoginPg extends React.Component {
               />
             </div>
             {formErrors.password.length>5 && (
-  <span className= "errorMessage">{formErrors.password}</span>
+  <span className= "errorMessage" style= {{color:"red"}}>{formErrors.password}</span>
           )}
             <div className="Login" style={{marginBottom:20}}>
             <Button variant= "primary" type= "submit">Login</Button>

@@ -68,7 +68,7 @@ class FrontPage extends React.Component{
                 </Row>
              
                 </Container>
-                <center><h1 style= {{background: "#42431f", color: "white"}}>Developers</h1>
+                <center><h1 style= {{background: "powderblue", color: "black"}}>Developers</h1>
                 <div>
                 <Container>
                     <Row style= {{}}>
@@ -90,7 +90,7 @@ class FrontPage extends React.Component{
                 </Row>
                 </Container>
                 </div></center>
-                <center><h1 style= {{background: "#42431f", color: "white"}}>Mentor</h1></center>
+                <center><h1 style= {{background: "powderblue", color: "black"}}>Mentor</h1></center>
                     <Container><center><Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/sanket.png" roundedCircle ></Image>
                     <figcaption>Nagesh Sir</figcaption></center>
                     </Container>
