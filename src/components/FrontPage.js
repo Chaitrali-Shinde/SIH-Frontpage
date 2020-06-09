@@ -1,5 +1,6 @@
 import React from 'react'
-import {Row, Col, Container, Button, Image, Card} from 'react-bootstrap'
+import {Row, Col, Container, Button, Image, Card, figcaption} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 class FrontPage extends React.Component{
 
@@ -9,10 +10,12 @@ class FrontPage extends React.Component{
                 <Row style= {{background: "#501d1b"}}>
                     <Col style= {{color: "white", marginTop: 20, fontFamily: "serif", fontStyle: "bold"}}><h1>Acquaintance</h1></Col>
                     <Col lg= {{span: 1, offset:5}} style= {{marginTop: 20, marginBottom: 20}}>
-                    <Button variant="primary">Register</Button>
+                    <Link to= "./registrationPg">
+                    <Button variant="primary">Register</Button></Link>
                     </Col>
                     <Col lg= {{span: 1, offset:0}} style= {{marginTop: 20}}>
-                    <Button variant="outline-info">Login</Button>
+                        <Link to= "./LoginPg">
+                    <Button variant="outline-info">Login</Button></Link>
                     </Col>
                 </Row>
                 <Row>
@@ -57,21 +60,41 @@ class FrontPage extends React.Component{
                             <Col><br/><h1 style= {{fontFamily: "Arvo", color: "#e85a4f"}}>Investor</h1>
                                 <p style= {{background: "#e5e5e5", padding: 10}}>Invest your valuable money in deserving startup.<br/>Find a community</p>
                             </Col>
-                            <Image style= {{width:150, height: 150}} src= "assets/community1.jpeg" roundedCircle/>
+                            <Image style= {{width:150, height: 150, marginLeft: 30}} src= "assets/community1.jpeg" roundedCircle/>
                             <Col><br/><h1 style= {{fontFamily: "Arvo", color: "#e85a4f"}}>Community</h1>
                                 <p style= {{background: "#e5e5e5", padding: 10}}>Platform for asking your queries.<br/>Get knowlege about vaious new products and inventions.<br/>Disscuss about on your favourite topics.</p>
                             </Col>
                             </Row>
                 </Row>
-                <Row>
-                    <Card>hey</Card>
-                    <Card>hey</Card>
-                    <Card>hey</Card>
-                    <Card>hey</Card>
-                    <Card>hey</Card>
-                    <Card>hey</Card>
+             
+                </Container>
+                <center><h1 style= {{background: "#42431f", color: "white"}}>Developers</h1>
+                <div>
+                <Container>
+                    <Row style= {{}}>
+                   <Col>
+                    <Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/sanket.png" roundedCircle ></Image>
+                    <figcaption>Sanket Tupe</figcaption></Col>
+                   <Col> <Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/harshal.jpg" roundedCircle ></Image>
+                    <figcaption>Harshal Sabale</figcaption></Col>
+                   <Col><Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/manvendra.png" roundedCircle ></Image>
+                    <figcaption>Manvendra Chavan</figcaption></Col> 
+                    <Col><Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/daksh.png" roundedCircle ></Image>
+                    <figcaption>Daksh Chaudhary</figcaption></Col>
+                    <Col> <Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/sanket.png" roundedCircle ></Image>
+                    <figcaption>Shubhankar Deshmukh</figcaption>
+                    </Col>
+                    <Col><Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/chaitrali.png" roundedCircle ></Image>
+                    <figcaption>Chaitrali Shinde</figcaption>
+                    </Col>
                 </Row>
                 </Container>
+                </div></center>
+                <center><h1 style= {{background: "#42431f", color: "white"}}>Mentor</h1></center>
+                    <Container><center><Image style= {{width: 100, height: 100, marginLeft: 40}} src="assets/sanket.png" roundedCircle ></Image>
+                    <figcaption>Nagesh Sir</figcaption></center>
+                    </Container>
+
             </div>
         );
     }
